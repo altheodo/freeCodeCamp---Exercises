@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please enter your personal information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name<input id="name" type="text" placeholder=" Enter full name" required></label>
+        <label id="email-label" for="email">Email<input id="email" type="email" placeholder=" Enter email address" required></label>
+        <label id="number-label" for="number"> Phone Number (10 digits)<input id="number" type="number" min="1111111111" max="9999999999" placeholder=" Enter phone number" required></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Are you married?
+          <select id="dropdown">
+            <option value=""> (select one) </option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Gender (required)</legend>
+        <label for="man"><input value="1" id="man" type="radio" name="gender" class="inline" checked/> Man</label>
+        <label for="woman"><input value="2" id="woman" type="radio" name="gender" class="inline"/> Woman</label>
+        <label for="not-mention"><input value="3" id="not-mention" type="radio" name="gender" class="inline"/> Prefer not to mention</label>
+      </fieldset>
+      <fieldset>
+        <label for="bio">Your story:
+          <textarea id="bio" rows="5" placeholder=" Please tell us about yourself..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What type of emails would you like to receive? (check all that apply)</legend>
+        <label for="personal"><input value="1" id="personal" type="checkbox"/> Personal emails</label>
+        <label for="business"><input value="2" id="business" type="checkbox"/> Business emails</label>
+        <label for="promotional"><input value="3" id="promotional" type="checkbox"/> Promotional emails</label>
+        <label for="informational"><input value="4" id="informational" type="checkbox"/> Informational emails</label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+    <footer></footer>
+  </body>
+</html>
