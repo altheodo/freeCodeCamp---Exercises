@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #d1989e;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+#title {
+    margin: auto;
+    text-align: center;
+}
+
+#title > h1 {
+    font-family: "Brush Script MT";
+    font-size: 5.5em;
+    margin: 10px auto;
+}
+
+#quote {
+    margin: -5px auto 10px auto;
+    padding-bottom: 5px;
+    width: 80%;
+}
+
+#img-div {
+    background-color: pink;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 5px 5px 5px;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#tribute-info {
+    padding: 10px;
+    margin: auto;
+    max-width: 600px;
+}
+
+#tribute-info > h3 {
+    text-align: center;
+}
+
+#tribute-info > ul > li {
+    margin-bottom: 10px;
+}
+
+#end-quote {
+    width: 100%;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+#end-quoter {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+#read-more {
+    text-align: center;
+    margin: 20px auto 10px auto;
+    max-width: 1000px;
+}
+
+#tribute-link {
+    color: white;
+}
+
+#tribute-link:visited {
+    color: purple;
+}
