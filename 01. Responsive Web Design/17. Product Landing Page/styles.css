@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 6rem;
+    background-color: #e0e0e0;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+#brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+}
+
+#header-img {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+#header h1 {
+    font-family: "Nanum Brush Script";
+    font-size: 2.7rem;
+    padding: 0 0 0 1rem;
+    margin: 0;
+}
+
+#nav-bar {
+    width: 50%;
+    max-width: 30rem;
+}
+
+#nav-bar > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+    list-style: none;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ea5b0c;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.nav-link:hover {
+    background-color: #ea5b0c;
+    color: #fff;
+}
+
+main {
+    width: 100%;
+    padding-top: 7rem;
+    margin: auto;
+}
+
+#get-started {
+    text-align: center;
+    padding: 0.5rem 0 2rem 0;
+    margin: 0.5rem 0 1rem 0;
+    margin-bottom: 3rem;
+}
+
+#form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#email {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    height: 2rem;
+    width: 50%;
+    min-width: 10rem;
+    max-width: 25rem;
+    border: 0.15rem solid #000;
+}
+
+#submit, .select-button {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #ea5b0c;
+    color: #fff;
+    border:none;
+}
+
+#submit:hover, .select-button:hover {
+    background-color: #fff;
+    color: #ea5b0c;
+    cursor: pointer;
+}
+
+.feature {
+    width: 80%;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.feature > h2 {
+    margin-bottom: -0.7rem;
+}
+
+.feature > p {
+    margin-bottom: 2rem;
+}
+
+.feature:last-of-type {
+    margin-bottom: 5rem;
+}
+
+#demo {
+    width: 100%;
+    margin: 0 0 5rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+#video {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 60rem;
+    aspect-ratio: 16 / 9 !important;
+}
+
+#pricing {
+    width: 100%;
+    max-width: 60rem;
+    margin: 2rem auto 4rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.package {
+    border: 0.15rem solid #000;
+    max-width: 15rem;
+    min-width: 15rem;
+    height: 19.5rem;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0e0e0;
+}
+
+.package-name {
+    font-size: 1.8rem;
+    background-color: #ea5b0c;
+    color: #fff;
+    font-weight: 500;
+    margin: -1rem 0 0 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.contents {
+    margin: 0 auto 1.2rem 1.2rem;
+}
+
+.select-button {
+    margin-top: auto;
+}
+
+footer {
+    width: 100%;
+    background-color: #ea5b0c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+address {
+    text-align: center;
+    padding: 0.3rem;
+}
+
+@media (max-width: 750px) {
+    #header{
+        width: 100%;
+        height: 7.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #brand {
+        width: 100%;
+        justify-content: center;
+        margin: -0.25rem 0 1rem 0;
+    }
+
+    #nav-bar {
+        width: 100%;
+    }
+
+    main {
+        padding-top: 9rem;
+    }
+
+    #pricing {
+        width: 100%;
+        height: 60rem;
+        margin: 2rem auto 4rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
