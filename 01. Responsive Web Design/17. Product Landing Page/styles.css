@@ -67,6 +67,10 @@ body {
     color: #fff;
 }
 
+#features, #demo, #pricing {
+    scroll-margin-top: 7rem;
+}
+
 main {
     width: 100%;
     padding-top: 7rem;
@@ -218,6 +222,10 @@ address {
 
     #nav-bar {
         width: 100%;
+    }
+
+    #features, #demo, #pricing {
+        scroll-margin-top: 9rem;
     }
 
     main {
