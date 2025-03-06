@@ -2,29 +2,43 @@ const userInput = document.getElementById("number");
 const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 const output = document.getElementById("output");
-const romNum = [1000, 500, 100, 50, 10, 5, 1];
-const romLet = ["M", "D", "C", "L", "X", "V", "I"];
-let outputText = "";
+const romans = [
+  ["M", 1000],
+  ["CM", 900],
+  ["D", 500],
+  ["CD", 400],
+  ["C", 100],
+  ["XC", 90],
+  ["L", 50],
+  ["XL", 40],
+  ["X", 10],
+  ["IX", 9],
+  ["V", 5],
+  ["IV", 4],
+  ["I", 1]
+];
 
-const roman = (input, i) => { 
-  //let i = 0;
-  //let step = 0;
-  if (input % romNum[i] === 0) {
-    let times = 0;
-    while (times <= i + 1) {
-      outputText += romLet[i];
-      times++;
-    }
-    return outputText;  
-  } else {
-    //i++;
-    if (input === (input % romNum[i])) {
-      //step++;
-      return roman(romNum[i], i + 1) + (input % romLet[i]);
+const romanize = (input) => {
+  let out = "";
+  let ind = 0;
+  let number = input;
+  while (number > 0 && ind < romans.length) {
+    if (number === 1) {
+      out += "I";
+      return out;
     } else {
-      //...
+      if (number % romans[ind][1] === number) {
+        ind++;
+      } else {
+        for (let i = 0; i < Math.floor(number / romans[ind][1]); i++) {
+          out += romans[ind][0];
+        }
+        number = number % romans[ind][1];
+        ind++;
+      }
     }
   }
+  return out;
 }
 
 const checkUserInput = () => {
@@ -49,10 +63,15 @@ const checkUserInput = () => {
     return;
   }
 
-  outputText = "";
-  output.innerText = roman(inputNumber, 0);
+  output.innerText = romanize(inputNumber);
   result.classList.remove("alert", "hide");
   userInput.value = "";
 }
 
 convertBtn.addEventListener("click", checkUserInput);
+
+userInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    checkUserInput();
+  }
+});

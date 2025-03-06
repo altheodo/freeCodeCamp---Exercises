@@ -1,87 +1,87 @@
 * {
-box-sizing: border-box;
-font-family: Georgia, serif;
-font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+    font-size: 62.5%;
 }
 
 body {
-background-color: #89a090;
-margin: 0;
-padding: 0;
-display:flex;
-align-items: center;
-justify-content: center;
+    background-color: #89a090;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-width: 47rem;
-height: 40rem;
-position: absolute;
-top: 15rem;
-left: calc(50% - 23.5rem);
+    width: 47rem;
+    height: 40rem;
+    position: absolute;
+    top: 15rem;
+    left: calc(50% - 23.5rem);
 }
 
 .container h1 {
-text-align: center;
-font-size: 3.3rem;
-color: white;
+    text-align: center;
+    font-size: 3.3rem;
+    color: white;
 }
 
 #input-box,
 #result {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-width: 100%;
-background-color: #274b32;
-border: 0.5rem solid #bdf5cf;
-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #274b32;
+    border: 0.5rem solid #bdf5cf;
+    color: white;
 }
 
 #input-box h2 {
-font-size: 2.5rem;
-margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 #number {
-width: 80%;
-height: 4rem;
-font-size: 3rem;
-font-family: sans-serif;
+    width: 80%;
+    height: 4rem;
+    font-size: 3rem;
+    font-family: sans-serif;
 }
 
 #convert-btn {
-width: 80%;
-height: 4rem;
-font-size: 2.5rem;
-margin: 1rem 0 2rem 0;
-background-color: #dfc43c;
-border: 0.3rem solid #f5e490;
-color: black;
+    width: 80%;
+    height: 4rem;
+    font-size: 2.5rem;
+    margin: 1rem 0 2rem 0;
+    background-color: #dfc43c;
+    border: 0.3rem solid #f5e490;
+    color: black;
 }
 
 #convert-btn:hover {
-cursor: pointer;
+    cursor: pointer;
 }
 
 #result {
-margin-top: 1rem;
-padding: 1.2rem 0;
+    margin-top: 1rem;
+    padding: 1.2rem 0;
 }
 
 #output {
-margin: auto;
-font-size: 2.7rem;
-text-align: center;
+    margin: auto;
+    font-size: 2.7rem;
+    text-align: center;
 }
 
 .hide {
-visibility: hidden;
+    visibility: hidden;
 }
 
 .alert {
-background-color: #b07b79 !important;
-border-color: #f59795 !important;
-color: white !important;
+    background-color: #b07b79 !important;
+    border-color: #f59795 !important;
+    color: white !important;
 }
