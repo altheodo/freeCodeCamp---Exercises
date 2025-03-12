@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #009485;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body h1 {
+    color: white;
+    margin: 7rem auto 0 auto;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#smartphone {
+    background-color: black;
+    width: 30rem;
+    height: 50rem;
+    position: absolute;
+    top: 15rem;
+    left: calc(50% - 15rem);
+    border-radius: 5%;
+}
+
+#smartphone h3 {
+    font-size: 1.8rem;
+}
+
+#camera {
+    background-color: black;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.2rem;
+    border: none;
+    border-radius: 100%;
+}
+
+#screen {
+    background-color: #deb8cb;
+    width: 90%;
+    height: 90%;
+    margin: 1.5rem auto auto auto;
+    border-radius: 3%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-input {
+    margin: 0 auto 1rem auto;
+    width: 20rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.7rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#results-div {
+    overflow-y: auto;
+    height: 27rem;
+    width: 100%;
+    border-top: 0.1rem solid black;
+}
+
+#results-div p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 2.2rem;
+    margin: 1rem 2rem;
+}
+
+#buttons {
+    margin: auto auto 1rem auto;
+}
+
+#check-btn, #clear-btn {
+    width: 9rem;
+    height: 3.5rem;
+    margin: 0  1.5rem 0 1.5rem;
+    background-color: #db8498;
+    border: 0.1rem solid black;
+    border-radius: 0.7rem;
+    font-size: 2rem;
+    color: black;
+}
+
+#check-btn:hover, #clear-btn:hover {
+    cursor: pointer;
+    border-color: white;
+    color: white;
+}
