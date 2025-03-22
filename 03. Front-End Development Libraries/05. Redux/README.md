@@ -1,0 +1,1 @@
+freeCodeCamp teaches Redux over 17 short projects. These are just some of the most notable ones.
